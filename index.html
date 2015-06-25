@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>MBPCC Dosimetry Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="static/vendor/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <script src="static/vendor/moment/min/moment.min.js"></script>
+    <script src="static/vendor/underscore/underscore-min.js"></script>
+    <script src="static/vendor/jquery/dist/jquery.js"></script>
+    <script src="static/vendor/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="static/vendor/angular/angular.js"></script>
+    <script src="static/vendor/angular-local-storage/dist/angular-local-storage.min.js"></script>
+    <script src="static/js/app.js"></script>
+</head>
+<body ng-app="app">
+    <div class="container-fluid" ng-controller="PatientListController">
+
+        <div class="row">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-6"><h3 class="brand-color text-center">Mekha & Yujan Wedding Seating Chart</h3></div>
+            <div class="col-md-3">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+             <div class="form-group">
+                <label for="searchInput">Search</label>
+                <input type="text" class="form-control" id="searchInput" placeholder="Name/Table" ng-model='searchStr'>
+              </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" style="padding-left: 0; padding-right: 0;">
+                <table class="table table-striped">
+                    <thead>
+                        <tr class="table-head">
+                            <th>Guest Name</th>
+                            <th>Table #</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr ng-repeat="row in data |  filter: searchStr | orderBy: 'name'">
+                            <td>{{row['name']}}</td>
+                            <td><strong>{{row['table']}}</strong></td>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

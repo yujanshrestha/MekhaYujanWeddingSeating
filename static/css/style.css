@@ -1,0 +1,42 @@
+.table-head > th {
+    border-bottom: hidden;
+}
+
+th {
+    color: #888;
+}
+
+.button-cell {
+    width: 125px;
+    text-align: center;
+}
+
+.admin-form  input {
+    width: 100%;
+}
+
+.brand-color {
+  color: rgb(47, 8, 152);
+}
+
+.process-header {
+  text-align: center;
+  font-size: 0.8em;
+}
+
+
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  padding: 3px;
+}
+
+@media (min-width: 1920px) {
+  body {
+    font-size: 20px !important;
+  }
+}

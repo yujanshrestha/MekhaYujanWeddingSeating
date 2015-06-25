@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="1418586708">
+    <data-source source="LOCAL" name="SQL Server - @172.30.99.20" read-only="true" uuid="18b5aa53-a0fd-4ba5-a38a-2fcc77777a58">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://172.30.99.20:1433</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="SQL Server - @172.30.1.101\instance1" uuid="264cf981-52af-402b-9187-f219df741222">
+      <driver-ref>sqlserver.ms</driver-ref>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://172.30.1.101\instance1:1433</jdbc-url>
+      <libraries />
+    </data-source>
+  </component>
+</project>

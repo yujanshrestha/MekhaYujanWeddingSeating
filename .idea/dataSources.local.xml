@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="SQL Server - @172.30.99.20" uuid="18b5aa53-a0fd-4ba5-a38a-2fcc77777a58">
+      <secret-storage>master_key</secret-storage>
+      <user-name>innolitics</user-name>
+      <schema-pattern>U26MBP.*</schema-pattern>
+      <default-schemas>U26MBP.*</default-schemas>
+    </data-source>
+    <data-source name="SQL Server - @172.30.1.101\instance1" uuid="264cf981-52af-402b-9187-f219df741222">
+      <secret-storage>master_key</secret-storage>
+      <user-name>physics</user-name>
+      <schema-pattern>master.*</schema-pattern>
+      <default-schemas>master.*</default-schemas>
+    </data-source>
+  </component>
+</project>
