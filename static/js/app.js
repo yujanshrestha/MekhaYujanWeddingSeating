@@ -1,4 +1,4 @@
-angular.module('app', ['LocalStorageModule'])
+angular.module('app', ['angular.filter'])
 .controller('PatientListController', function ($scope) {
   $scope.search = '';
   $scope.data = [

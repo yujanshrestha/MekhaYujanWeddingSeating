@@ -13,6 +13,7 @@
     <script src="static/vendor/angular/angular.js"></script>
     <script src="static/vendor/angular-local-storage/dist/angular-local-storage.min.js"></script>
     <script src="static/js/app.js"></script>
+    <script src="static/vendor/angular-filter/dist/angular-filter.min.js"></script>
 </head>
 <body ng-app="app">
     <div class="container-fluid" ng-controller="PatientListController">
@@ -40,7 +41,7 @@
                     </thead>
 
                     <tbody>
-                        <tr ng-repeat="row in data |  filter: searchStr | orderBy: 'name'">
+                        <tr ng-repeat="row in data |  fuzzy: searchStr | orderBy: 'name'">
                             <td>{{row['name']}}</td>
                             <td><strong>{{row['table']}}</strong></td>
                     </tbody>
